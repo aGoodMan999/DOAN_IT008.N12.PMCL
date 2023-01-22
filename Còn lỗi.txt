@@ -1,0 +1,3 @@
+Chỉnh Icon ở dưới taskbar.
+Thanh toán: 
++Khi chọn danh món , số lượng xong -> thêm -> làm mới: thì BillInfo vẫn vào DB

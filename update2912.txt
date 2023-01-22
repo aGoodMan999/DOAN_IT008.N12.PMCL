@@ -1,0 +1,5 @@
+Home - (An) : tổng doanh thu của loại món ăn, của bàn theo tháng, năm, chọn tháng, năm
+Payment - (Chánh): tìm cách thêm món ăn vào bàn đang có người (Chọn bàn từ combo box  -> thêm món như lúc tạo bill mới)
+Table - (Bảo): Thêm tính năng chuyển bàn ( Chuyển bill từ bàn này qua bàn khác ), thêm tính năng thanh toán nhiều bàn cùng 1 lúc (Gộp bill của các bàn lại)
+History - (Bình): Tạo thêm cửa sổ chi tiết bill ( Giống cái in bill bên thanh toán), ấn vào bill -> Hiện chi tiết.
+Phân quyền - (Hoàng Anh): Cho hiển thị role ở đâu đó bên cái lịch (Bỏ cái lịch đi cũng dc) , phân quyền cho nhân viên và admin

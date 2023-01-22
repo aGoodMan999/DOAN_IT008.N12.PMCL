@@ -1,0 +1,78 @@
+﻿<Window x:Class="QUANLICAPHE.View.InputYearsCartesianChart"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QUANLICAPHE.View"
+        xmlns:viewmodel="clr-namespace:QUANLICAPHE.ViewModel" 
+        d:DataContext="{d:DesignInstance Type=viewmodel:InputYearsCartesianChartViewModel}"
+        mc:Ignorable="d"
+        Title="InputYearsCartesianChart"  
+        Height="220" Width="500"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        >
+    <Window.DataContext>
+        <viewmodel:InputYearsCartesianChartViewModel></viewmodel:InputYearsCartesianChartViewModel>
+    </Window.DataContext>
+    <Grid>
+        <Border BorderThickness="5" BorderBrush="Black" CornerRadius="18" Background="White">
+            <Grid Background="Transparent">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="49*"/>
+                    <ColumnDefinition Width="51*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.ColumnSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <TextBlock Margin="5 5 5 5"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="20"
+                           FontFamily="UTM Avo">
+                    Nhập năm ở đây:
+                        </TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <TextBox    x:Name="txt_years"
+                            FontFamily="UTM Avo"
+                            Text="{Binding Script, Mode= TwoWay}"
+                            TextAlignment="Center"
+                            Width="500"
+                            Margin="10 5 10
+                                    5"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Background="HotPink"></TextBox>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Button x:Name="btn_OK" Content="OK" 
+                            Command="{Binding btn_OKCommand}"
+                            CommandParameter="{Binding ElementName=txt_years, Path=Text, Mode=TwoWay}"
+                            FontFamily="UTM Avo"
+                            Margin="15 0 15 0" Click="Button_Click_1"></Button>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Button Content="Thoát" 
+                            FontFamily="UTM Avo"
+                            Margin="15 0 15 0" Click="Button_Click"></Button>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+            </Grid>
+        </Border>
+    </Grid>
+    
+    
+</Window>

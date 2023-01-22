@@ -1,0 +1,29 @@
+1. Số lượng kí tự và kiểu dữ liệu ở text box phải tương thích với số lượng và kiểu dữ liệu ở database,
+
+2. Phải quy định mật khẩu phải bao gồm kí tự ntn ở ngay trên GUI
+
+3. Loại extenstion của ảnh, kích thước phải giới hạn
+
+4. Đơn vị tiền
+
+5. Phải có id là khóa chính mặc định của hệ thống,
+ vd:
+--id--MAMONAN--TENMON---
+6. usercase sai phải ngăn chặn
+
+7. Không được xóa dữ liệu trong sql => phải cài thêm thuộc tính đã xóa hay chưa
+
+8. Các thuộc not null ở database phải bắt buộc điền ở GUI, đánh dấu bằng dấu (*)
+
+9. Làm sao để người dùng chưa sử dụng phần mềm nần lào vẫn có thể bt sử dụng.
+
+10. Đóng gói được. Làm sao để người dùng đóng có thể dễ dàng tải về và sử dụng.
+
+11. Khi tải về thì chỉ sử dụng thôi. (Database tự liên kết, có thể dùng database online
+)
+
+12. Admin là quản trị hệ thống (không phải có quyền quản lý mọi thứ)
+
+13. Sửa quản lý theo năm.
+
+14. Có thể cài role 

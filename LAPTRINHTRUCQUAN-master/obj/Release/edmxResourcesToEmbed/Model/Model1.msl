@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QUANLIQUANANGKModelStoreContainer" CdmEntityContainer="QUANLIQUANANGKEntities">
+    <EntitySetMapping Name="Bills">
+      <EntityTypeMapping TypeName="QUANLIQUANANGKModel.Bill">
+        <MappingFragment StoreEntitySet="Bill">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="DateCheckIn" ColumnName="DateCheckIn" />
+          <ScalarProperty Name="DateCheckOut" ColumnName="DateCheckOut" />
+          <ScalarProperty Name="idTable" ColumnName="idTable" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="PrintHD" ColumnName="PrintHD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BillInfoes">
+      <EntityTypeMapping TypeName="QUANLIQUANANGKModel.BillInfo">
+        <MappingFragment StoreEntitySet="BillInfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idBill" ColumnName="idBill" />
+          <ScalarProperty Name="idFood" ColumnName="idFood" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="deleteBillInfo" ColumnName="deleteBillInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Foods">
+      <EntityTypeMapping TypeName="QUANLIQUANANGKModel.Food">
+        <MappingFragment StoreEntitySet="Food">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="idCategory" ColumnName="idCategory" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="imageFood" ColumnName="imageFood" />
+          <ScalarProperty Name="deleteFood" ColumnName="deleteFood" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FoodCategories">
+      <EntityTypeMapping TypeName="QUANLIQUANANGKModel.FoodCategory">
+        <MappingFragment StoreEntitySet="FoodCategory">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="deleteFoodCategory" ColumnName="deleteFoodCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TableFoods">
+      <EntityTypeMapping TypeName="QUANLIQUANANGKModel.TableFood">
+        <MappingFragment StoreEntitySet="TableFood">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idbill" ColumnName="idbill" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="QUANLIQUANANGKModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="HOTEN" ColumnName="HOTEN" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="IMAGEUSER" ColumnName="IMAGEUSER" />
+          <ScalarProperty Name="DANGNHAP" ColumnName="DANGNHAP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="TOP_SALES" FunctionName="QUANLIQUANANGKModel.Store.TOP_SALES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QUANLIQUANANGKModel.TOP_SALES_Result">
+          <ScalarProperty Name="Sản_phẩm" ColumnName="Sản phẩm" />
+          <ScalarProperty Name="Số_lượng" ColumnName="Số lượng" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,3 @@
+Fix lỗi 10/1: 
++Thêm chi tiết hóa đơn giống nhau. => Khi thêm phải gộp lại, tăng số lượng.
++
